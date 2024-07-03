@@ -32,7 +32,7 @@
     justify-content: space-evenly;
 }
 
-#left-container{
+.left-container{
     position: relative;
     width: 50vw;
     height: 100vh;
@@ -98,7 +98,7 @@
     border-color: white;
 }
 
-#right-container{
+.right-container{
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -107,7 +107,7 @@
     justify-content: center;
 }
 
-#product{
+.product{
     display: grid;
     font-family: 'Instrument Serif';
     justify-content: center;

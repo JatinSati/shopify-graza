@@ -1,6 +1,6 @@
 {{ 'theme.css' | asset_url | stylesheet_tag }}
 
-<div id="container">
+<div class="container">
     <div id="left-container">
         {% if section.settings.image_picker_settings %}
            {% assign image_url = section.settings.image_picker_settings | image_url: width: '500' %}

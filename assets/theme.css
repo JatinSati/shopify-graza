@@ -24,7 +24,7 @@
     height: 2px;
 }
 
-#container{
+.container{
     position: relative;
     display: flex;
     width: 100vw;

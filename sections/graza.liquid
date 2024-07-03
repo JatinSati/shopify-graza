@@ -1,11 +1,27 @@
-<h1>hello</h1>
 {{ 'theme.css' | asset_url | stylesheet_tag }}
 
+<div id="container">
+    <div id="left-container">
+        {% if section.settings.image_picker_settings  %}
+          {{
+              section.settings.image_picker_settings | 
+              image_url: width:50vw | 
+              image_tag: 'style: height:100vh; object-fit: cover;'
+          }}
+        {% endif %}
+    </div>
+</div>
 {% schema  %} 
     {
         "name":"Banner",
         "class":"graza",
-        "settings": [],
+        "settings": [
+            {
+                "type":"image_picker",
+                "label":"Image Picker",
+                "id": "image_picker_settings"
+            }
+        ],
         "presets": [
             {
                 "name":"graza"

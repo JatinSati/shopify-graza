@@ -1,14 +1,14 @@
 {{ 'theme.css' | asset_url | stylesheet_tag }}
 
 <div class="container">
-    <div id="left-container">
+    <div class="left-container">
         {% if section.settings.image_picker_settings %}
            {% assign image_url = section.settings.image_picker_settings | image_url: width: '500' %}
            {{ image_url | image_tag: style: 'height:100vh; object-fit: cover;' }}
         {% endif %}
     </div>
-    <div id="right-container">
-      <div id="product">
+    <div class="right-container">
+      <div class="product">
                 <h1 class="product-title">"Dizzle" & "Sizzle"</h1>
                 <u class="product-title">Extra Virgin Olive Oil</u>
                 <div id="rating">

@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.graza{
+    background-color: #F5E6D8;
+    overflow-x: hidden;
+}
 
 #top{
     font-family: 'Instrument Serif';

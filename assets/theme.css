@@ -119,13 +119,13 @@
     color: rgb(48, 48, 3);
 }
 
-#rating{
+.rating{
     display: flex;
     padding: 1rem;
     margin-left: 3rem;
 }
 
-#Reviews{
+.Reviews{
     margin-left: 10px;
     padding-bottom: 10px;
 }

@@ -41,7 +41,7 @@
         "full_page_height_enable": true
       }
     },
-    "graza_6DUVwr": {
+    "graza_hPmzQD": {
       "type": "graza",
       "settings": {
       }
@@ -89,7 +89,7 @@
   },
   "order": [
     "image_banner",
-    "graza_6DUVwr",
+    "graza_hPmzQD",
     "featured_collection",
     "collection_list"
   ]

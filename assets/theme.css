@@ -6,7 +6,8 @@
 
 .graza{
     background-color: #F5E6D8;
-    overflow-x: hidden;
+    height: 100vh;
+    width: 100vw;
 }
 
 #top{

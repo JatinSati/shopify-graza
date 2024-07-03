@@ -6,15 +6,16 @@
           {{
               section.settings.image_picker_settings | 
               image_url: width:50vw | 
-              image_tag: 'style: height:100vh; object-fit: cover;'
+              image_tag: style: 'height:100vh; object-fit: cover;'
           }}
         {% endif %}
     </div>
 </div>
 {% schema  %} 
     {
-        "name":"Banner",
+        "name":"graza",
         "class":"graza",
+        "limit": 2,
         "settings": [
             {
                 "type":"image_picker",

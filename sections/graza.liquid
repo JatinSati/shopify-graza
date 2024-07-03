@@ -2,12 +2,9 @@
 
 <div id="container">
     <div id="left-container">
-        {% if section.settings.image_picker_settings  %}
-          {{
-              section.settings.image_picker_settings | 
-              image_url: width:50vw | 
-              image_tag: style: 'height:100vh; object-fit: cover;'
-          }}
+        {% if section.settings.image_picker_settings %}
+           {% assign image_url = section.settings.image_picker_settings | image_url: width: '50vw' %}
+           {{ image_url | image_tag: style: 'height:100vh; object-fit: cover;' }}
         {% endif %}
     </div>
 </div>

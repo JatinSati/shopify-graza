@@ -44,6 +44,7 @@
     "graza_hPmzQD": {
       "type": "graza",
       "settings": {
+        "image_picker_settings": "shopify:\/\/shop_images\/img1.jpg"
       }
     },
     "featured_collection": {

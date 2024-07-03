@@ -1,5 +1,5 @@
 {{ 'theme.css' | asset_url | stylesheet_tag }}
-{{ 'script.js' | asset_url | script_tag }}
+<script defer src="{{ 'script.js' | asset_url }}"></script>
 
 <div class="container">
     <div class="left-container">

@@ -1,0 +1,569 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F5E6D8;
+    overflow-x: hidden;
+}
+
+#top{
+    font-family: 'Instrument Serif';
+    font-size: 7px;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    color: rgb(48, 48, 3);
+}
+
+#line{
+    background: rgb(48, 48, 3);
+    height: 2px;
+}
+
+#container{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+}
+
+#left-container{
+    position: relative;
+    width: 50%;
+    height: 100vh;
+}
+
+#logo-div{
+    display: flex;
+}
+
+#logo{
+    position: absolute;
+    margin-left: 20px;
+    color: rgb(48, 48, 3);
+    height: 50px;
+    z-index: 100;
+}
+
+.slider{
+    position: relative;
+    height: 100vh;
+    width: 50vw;
+}
+
+.slider .list{
+    overflow: hidden;
+}
+
+.slider .list .items{
+    position: absolute;
+}
+
+.slider .list .items.active{
+    opacity: 1;
+    z-index: 10;
+}
+
+.slider .list .img1{
+    height: 100vh;
+    width: 50vw;
+    object-fit: cover;
+}
+
+.thumbnail{
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    z-index: 11;
+    flex-direction: column;
+    gap: 3px;
+    margin-left: 1vw;
+    margin-top: 30vh;
+}
+
+.thumbnail .img1{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid black;
+}
+
+.img1:hover{
+    border-color: white;
+}
+
+#right-container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#product{
+    display: grid;
+    font-family: 'Instrument Serif';
+    justify-content: center;
+}
+
+.product-title{
+    font-size: 2.5rem;
+    font-weight: 100;
+    color: rgb(48, 48, 3);
+}
+
+#rating{
+    display: flex;
+    padding: 1rem;
+    margin-left: 3rem;
+}
+
+#Reviews{
+    margin-left: 10px;
+    padding-bottom: 10px;
+}
+
+#billing{
+    display: grid;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 1rem;
+    background-color: #FFF3EC;
+    height: 60vh;
+    width: 33vw;
+}
+
+#quantity{
+    margin-top: 2vh;
+    margin-left: 6%;
+    padding: 0;
+    font-family: "GT Alpina Typewriter Regular";
+    font-weight: 50;
+}
+
+#buttons{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#button-set{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+#Set{
+    display: grid;
+    align-items: center;
+    height: 12vh;
+    width: 45%;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: black;
+    background-color: rgb(250, 243, 235);
+    font-family: "GT Alpina Typewriter Regular";
+}
+
+#set-offer{
+    height: 6.5vh;
+    top: 0;
+    color: rgb(250, 243, 235);
+    background-color: rgb(48, 48, 3);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#Set:hover {
+    background-color: #9EEF80;
+}
+
+#line2{
+    border: none;
+    border-top: 1px dotted rgb(0, 0, 0);
+    color: #fff;
+    background-color: #fff;
+    height: 1px;
+    width: 90%;
+    margin-left: 2vw;
+}
+
+.box{
+    display: flex;
+    gap: 1vw;
+    cursor: pointer;
+}
+
+.checkmark{
+    width: 20px;
+    height: 20px;
+    margin-left: 2vw;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 2px solid black;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    font-family: "GT Alpina Typewriter Regular";
+}
+
+.checkmark:checked {
+    background-color: #9EEF80;
+}
+
+#bill-details{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+#amount{
+    margin-right: 3vw;
+}
+
+#strike{
+    color: gray;
+}
+
+.dropdown{
+    position: relative;
+    width: 90%;
+    height: 6.5vh;
+    margin-left: 2vw;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.4s;
+    font-family: "GT Alpina Typewriter Regular";
+}
+.select{
+    display: flex;
+    margin-left: 10px;
+    margin-top: 0.4vh;
+    gap: 10px;
+    justify-content: space-between;
+}
+#icon{
+    transition: 0.3s;
+    margin-top: 0.5vh;
+}
+.icon-rotate{
+    transform: rotate(180deg);
+}
+.menu{
+    margin-top: 3vh;
+    list-style: none;
+    position: absolute;
+    opacity: 0;
+    display: none;
+    gap: 10%;
+    margin-left: 7.9vw;
+}
+.menu li{
+    cursor: pointer;
+}
+.menu-open{
+    display: block;
+    opacity: 1;
+}
+.hidden {
+    display: none;
+}
+.dropdown-expanded {
+    padding: 10px;
+    width: 90%;
+    height: 12.5vh;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+.bill-expand{
+    height: 60vh;
+    width: 33vw;
+}
+
+#order{
+    position: relative;
+}
+
+#above{
+    position: absolute;
+    top: -1vh;
+    left: -1vh;
+    width: 90%;
+    height: 5vh;
+    margin-left: 2.2vw;
+    margin-right: 3vw;
+    border-radius: 50px;
+    border-color: black;
+    background-color: #D1DF2F;
+    transition: 0.7s;
+    font-family: "GT Alpina Typewriter Regular";
+    
+}
+
+#button-below{
+    width: 90%;
+    height: 5vh;
+    margin-left: 2.2vw;
+    border-radius: 50px;
+    border-color: black;
+    background-image: url('./img/checkered.jpeg');
+    background-size: 20%;
+}
+
+#above:hover{
+    top: 0;
+    left: 0;
+}
+
+.gift{
+    display: flex;
+    justify-content: center;
+    font-family: "GT Alpina Typewriter Regular";
+}
+
+.desc{
+    margin-top: 2vh;
+    display: grid;
+    justify-content: center;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 0;
+   
+}
+
+.nav-title{
+    font-family: "GT Alpina Typewriter Regular";
+    border: 2px solid rgb(48, 48, 3);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    background-color: #F5E6D8;
+    width: 11vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-title:hover{
+    background-color: #FFF3EC;
+    color: rgb(48, 48, 3);
+}
+
+.nav-title.active{
+    background-color: rgb(48, 48, 3);
+    color: #F5E6D8;
+}
+
+
+.desc-content{
+    border: 2px solid rgb(48, 48, 3);
+    background-color: #F5E6D8;
+    font-family: "GT Alpina Typewriter Regular";
+    height: 17vh;
+    width: 33vw;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding: 1vw;
+    display: none;
+    transition: 0.3s;
+}
+
+
+@media (max-width: 1100px) {
+    #container{
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+    #logo-div{
+        justify-content: center;
+    }
+    #right-container{
+        height: 600%;
+        width: 100%;
+    }
+    #quantity{
+        margin-left: 5.5%;
+    }
+    #billing{
+        height: 70vh;
+        width: 80vh;
+    }
+    .checkmark{
+        margin-left: 3vw;
+    }
+    #amount{
+        margin-right: 10vw;
+    }
+    #freq{
+        margin-right: 6vw;
+    }
+    .nav-title{
+        width: 20vw;
+    }
+    .desc-content{
+        width: 60vw;
+    }
+    #left-container{
+        height: 600%;
+        width: 100%;
+    }
+    .slider{
+        overflow: hidden;
+        width: 100vw;
+        height: 110vh;
+    }
+    .slider .list .items .img1{
+        width: 100vw;
+        height: 100vh;
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
+    }
+    .slider .list{
+        display: flex;
+        overflow: auto;
+        scroll-snap-type: x mandatory;
+        -ms-overflow-style: none; 
+        scrollbar-width: none;
+    }
+    .slider .list::-webkit-scrollbar {
+        display: none;
+    }
+    .slider .list .items{
+        position: static;
+    }
+    .thumbnail{
+        display: flex;
+        flex-direction: row;
+        gap: 6px;
+        top: 72vh;
+        left: calc(45%);
+    }
+    .thumbnail .img1{
+        height: 10px;
+        width: 10px;
+        filter: brightness(0.5) saturate(0%);
+    }
+}
+
+@media (max-width: 600px){
+    #billing{
+        width: 100vw;
+        border-radius: 0;
+    }
+    .nav-title{
+        width: 33.4vw;
+    }
+    .desc-content{
+        width: 100vw;
+    }
+    .slider{
+        display: flex;
+        width: 100vw;
+        height: 65vh;
+    }
+    .slider .list .items .img1{
+        width: 100vw;
+        height: 60vh;
+        overflow: hidden;
+    }
+    .thumbnail{
+        display: flex;
+        flex-direction: row;
+        gap: 6px;
+        top: 30vh;
+        left: calc(40%);
+    }
+    #quantity{
+        margin-left: 4%;
+    }
+    #button-set{
+        flex-direction: column;
+        align-items: center;
+    }
+    #buttons{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .menu{
+        margin-left: 30vw;
+    }
+    #Set{
+        width: 95%;
+        height: 12vh;
+    }
+    #desc-content{
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px){
+    #quantity{
+        margin-left: 5.5%;
+    }
+}
+
+@media (max-height: 600px){
+    #billing{
+        height: 120vh;
+        width: 150vh;
+    }
+    #Set{
+        height: 80%;
+    }
+    #set-offer{
+        height: 10vh;
+    }
+    #quantity{
+        margin-top: 6vh;
+    }
+    #amount{
+        margin-right: 5vw;
+    }
+    #button-below{
+        height: 10vh;
+    }
+    #above{
+        height: 10vh;
+    }
+    #desc-content{
+        height: 25vh;
+        width: 75vw;
+    }
+    #nav-title{
+        width: 25vw;
+    }
+    .slider .list .items .img1{
+        height: 200vh;
+    }
+    .slider{
+        height: 220vh;
+    }
+    .thumbnail{
+        top: 175vh;
+    }
+
+}

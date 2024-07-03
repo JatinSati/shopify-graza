@@ -165,6 +165,7 @@
 
 .Set{
     display: grid;
+    padding-bottom: 1px;
     align-items: center;
     height: 12vh;
     width: 45%;

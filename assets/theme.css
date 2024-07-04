@@ -387,7 +387,7 @@
     background-color: #F5E6D8;
     font-family: "GT Alpina Typewriter Regular";
     height: 17vh;
-    width: 33vw;
+    width: 24vw;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
     padding: 1vw;
@@ -397,7 +397,7 @@
 
 
 @media (max-width: 1100px) {
-    #container{
+    .container{
         flex-direction: column;
         height: 100%;
         width: 100%;
@@ -405,24 +405,24 @@
     #logo-div{
         justify-content: center;
     }
-    #right-container{
+    .right-container{
         height: 600%;
         width: 100%;
     }
-    #quantity{
+    .quantity{
         margin-left: 5.5%;
     }
-    #billing{
+    .billing{
         height: 70vh;
         width: 80vh;
     }
     .checkmark{
         margin-left: 3vw;
     }
-    #amount{
+    .amount{
         margin-right: 10vw;
     }
-    #freq{
+    .freq{
         margin-right: 6vw;
     }
     .nav-title{
@@ -431,7 +431,7 @@
     .desc-content{
         width: 60vw;
     }
-    #left-container{
+    .left-container{
         height: 600%;
         width: 100%;
     }
@@ -474,7 +474,7 @@
 }
 
 @media (max-width: 600px){
-    #billing{
+    .billing{
         width: 100vw;
         border-radius: 0;
     }
@@ -501,63 +501,63 @@
         top: 30vh;
         left: calc(40%);
     }
-    #quantity{
+    .quantity{
         margin-left: 4%;
     }
-    #button-set{
+    .button-set{
         flex-direction: column;
         align-items: center;
     }
-    #buttons{
+    .buttons{
         padding-left: 16px;
         padding-right: 16px;
     }
     .menu{
         margin-left: 30vw;
     }
-    #Set{
+    .Set{
         width: 95%;
         height: 12vh;
     }
-    #desc-content{
+    .desc-content{
         width: 100%;
     }
 }
 
 @media (max-width: 400px){
-    #quantity{
+    .quantity{
         margin-left: 5.5%;
     }
 }
 
 @media (max-height: 600px){
-    #billing{
+    .billing{
         height: 120vh;
         width: 150vh;
     }
-    #Set{
+    .Set{
         height: 80%;
     }
-    #set-offer{
+    .set-offer{
         height: 10vh;
     }
-    #quantity{
+    .quantity{
         margin-top: 6vh;
     }
-    #amount{
+    .amount{
         margin-right: 5vw;
     }
-    #button-below{
+    .button-below{
         height: 10vh;
     }
-    #above{
+    .above{
         height: 10vh;
     }
-    #desc-content{
+    .desc-content{
         height: 25vh;
         width: 75vw;
     }
-    #nav-title{
+    .nav-title{
         width: 25vw;
     }
     .slider .list .items .img1{

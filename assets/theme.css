@@ -75,6 +75,10 @@
     object-fit: cover;
 }
 
+.img1{
+  object-fit: cover;
+}
+
 .thumbnail{
     position: absolute;
     overflow: hidden;

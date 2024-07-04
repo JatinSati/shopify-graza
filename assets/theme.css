@@ -334,8 +334,7 @@
     height: 5vh;
     margin-left: 2.2vw;
     border-radius: 50px;
-    border-color: black;
-    background-size: 20%;
+    border: 2px solid black;
 }
 
 .above:hover{

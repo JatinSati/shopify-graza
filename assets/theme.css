@@ -132,6 +132,10 @@
     color: black;
 }
 
+.rating:hover{
+    color: gold;
+}
+
 .Reviews{
     margin-left: 10px;
     padding-bottom: 10px;

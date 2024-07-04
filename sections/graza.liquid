@@ -5,6 +5,7 @@
     <div class="left-container">
         {% if section.settings.image_picker_settings %}
            {% assign image_url = section.settings.image_picker_settings | image_url: width: '500' %}
+           {% assign image_url = section.settings.image_picker_settings | image_url: width: '500' %}
            {{ image_url | image_tag: style: 'height:100vh; object-fit: cover;' }}
         {% endif %}
     </div>

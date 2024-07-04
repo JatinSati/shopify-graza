@@ -508,7 +508,7 @@
     .slider .list .items .img1{
         min-width: 100%;
         height: 60vh;
-        overflow: hidden;
+        overflow-x: hidden;
     }
     .thumbnail{
         display: flex;

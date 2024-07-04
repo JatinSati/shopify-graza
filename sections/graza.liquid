@@ -2,13 +2,52 @@
 <script defer src="{{ 'script.js' | asset_url }}"></script>
 
 <div class="container">
-    <div class="left-container">
-           
-           <img class='img1' src="{{ 'img2.webp' | asset_url }}" width="500" height="1000" />
-           <img class='img1' src="{{ 'img1.jpeg' | asset_url }}" width="500" height="1000" />
+    <div id="left-container">
+          <div class="slider">
+              <div class="list">
+                  <div class="items active">
+                     <img class="img1" src="{{ 'img1.jpeg' | asset_url }}" width="500" height="1000">
+                  </div>
+                  <div class="items">
+                     <img class="img1" src="{{ 'img2.webp' | asset_url }}" width="500" height="1000">
+                  </div>
+                  <div class="items">
+                     <img class="img1" src="{{ 'img3.jpeg' | asset_url }}" width="500" height="1000">                 
+                  </div>
+                 <div class="items">
+                    <img class="img1" src="{{ 'img4.jpeg' | asset_url }}" width="500" height="1000">
+                 </div>
+                 <div class="items">
+                    <img class="img1" src="{{ 'img5.webp' | asset_url }}" width="500" height="1000">
+                 </div>
+                 <div class="items">
+                    <img class="img1" src="{{ 'img6.webp' | asset_url }}" width="500" height="1000">
+                 </div>
+              </div>
+              <div class="slider-pagination"></div>
+              <div class="thumbnail">
+                  <div class="items active">
+                     <img class="img1" src="{{ 'img1.jpeg' | asset_url }}" width="50" height="50">
+                  </div>
+                  <div class="items">
+                     <img class="img1" src="{{ 'img2.webp' | asset_url }}" width="50" height="50">
+                  </div>
+                  <div class="items">
+                    <img class="img1" src="{{ 'img3.jpeg' | asset_url }}" width="50" height="50">
+                 </div>
+                 <div class="items">
+                    <img class="img1" src="{{ 'img4.jpeg' | asset_url }}" width="50" height="50">
+                 </div>
+                 <div class="items">
+                    <img class="img1" src="{{ 'img5.webp' | asset_url }}" width="50" height="50">
+                 </div>
+                 <div class="items">
+                    <img class="img1" src="{{ 'img6.webp' | asset_url }}" width="50" height="50">
+                 </div>
+              </div>
+          </div>
+        </div>
 
-           
-    </div>
     <div class="right-container">
       <div class="product">
                 <h1 class="product-title">"Dizzle" & "Sizzle"</h1>

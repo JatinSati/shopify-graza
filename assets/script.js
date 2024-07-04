@@ -28,7 +28,7 @@ const dropdowns = document.querySelectorAll('.dropdown');
 dropdowns.forEach(dropdown =>{
     const select = dropdown.querySelector('.select');
     const icon = dropdown.querySelector('#icon');
-    const menu = dropdown.querySelectorAll('.menu');
+    const menu = dropdown.querySelector('.menu');
     const options = dropdown.querySelectorAll('.menu li');
     const selected = dropdown.querySelector('.selected');
 

@@ -101,8 +101,9 @@
 .right-container{
     display: flex;
     flex-direction: column;
+    overflow-y: hidden;
     width: 50%;
-    height: 100%;
+    height: 120vh;
     align-items: center;
     justify-content: center;
 }

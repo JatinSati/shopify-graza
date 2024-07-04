@@ -454,11 +454,11 @@
     }
     .slider{
         overflow: hidden;
-        width: 100%;
+        width: 100vh;
         height: 110vh;
     }
     .slider .list .items .img1{
-        width: 100%;
+        width: 100vh;
         height: 100vh;
         scroll-snap-align: start;
         scroll-snap-stop: always;

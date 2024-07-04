@@ -45,7 +45,7 @@ dropdowns.forEach(dropdown =>{
             selected.innerText = option.innerText;
             icon.classList.remove('icon-rotate');
             menu.classList.remove('menu-open');
-            dropdown.classList.remove('dropdown-expanded', 'bill-expand');
+            dropdown.classList.remove('dropdown-expanded');
             options.forEach(opt => {
                 opt.classList.remove('active', 'hidden');
             });

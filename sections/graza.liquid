@@ -1,11 +1,10 @@
 {{ 'theme.css' | asset_url | stylesheet_tag }}
-<script defer src="{{ 'script.js' | asset_url }}"></script>
+{{ 'script.js' | asset_url | script_tag }}
 
 <div class="container">
-    <div class="left-container" style="width: 600">
+    <div class="left-container">
         {% if section.settings.image_picker_settings %}
-           
-           < img src= "{{ 'img1.jpeg' | asset_url }}" />
+           {% assign image_url ='img1.jpeg' | image_url: width: '500' %}
            {{ image_url | image_tag: style: 'height:100vh; object-fit: cover;' }}
         {% endif %}
     </div>

@@ -506,7 +506,7 @@
         height: 65vh;
     }
     .slider .list .items .img1{
-        min-width: 100%;
+        min-width: 100vw;
         height: 60vh;
         overflow-x: hidden;
     }

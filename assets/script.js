@@ -54,7 +54,7 @@ dropdowns.forEach(dropdown =>{
     });
     document.addEventListener('click', (event) => {
         if (!dropdown.contains(event.target)) {
-            dropdown.classList.remove('dropdown-expanded','bill-expand');
+            dropdown.classList.remove('dropdown-expanded');
             icon.classList.remove('icon-rotate');
             menu.classList.remove('menu-open');
         }

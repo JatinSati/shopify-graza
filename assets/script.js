@@ -42,7 +42,6 @@ dropdowns.forEach(dropdown =>{
         option.addEventListener('click', (event) => {
             event.stopPropagation();
             selected.innerText = option.innerText;
-            icon.classList.remove('icon-rotate');
             menu.classList.remove('menu-open');
             dropdown.classList.remove('dropdown-expanded');
             options.forEach(opt => {

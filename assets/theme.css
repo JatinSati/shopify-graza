@@ -131,8 +131,7 @@
     padding: 1rem;
     color: black;
 }
-
-.rating:hover{
+.fa fa-star:hover{
     color: gold;
 }
 

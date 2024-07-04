@@ -361,7 +361,7 @@
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
     background-color: #F5E6D8;
-    width: 11vw;
+    width: 12vw;
     height: 5vh;
     display: flex;
     justify-content: center;
@@ -387,8 +387,8 @@
     background-color: #F5E6D8;
     font-family: "GT Alpina Typewriter Regular";
     color: rgb(48, 48, 3);
-    height: 20vh;
-    width: 33vw;
+    height: 22vh;
+    width: 36vw;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
     padding: 1vw;

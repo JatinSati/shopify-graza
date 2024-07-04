@@ -33,7 +33,7 @@ dropdowns.forEach(dropdown =>{
     const selected = dropdown.querySelector('.selected');
 
     dropdown.addEventListener('click', ()=>{
-        const isOpen = menu.classList.contains('menu-open');
+        const isOpen = menu.classList.contains('.menu-open');
         dropdown.classList.toggle('dropdown-expanded', !isOpen);
         icon.classList.toggle('icon-rotate', !isOpen);
         menu.classList.toggle('menu-open', !isOpen);

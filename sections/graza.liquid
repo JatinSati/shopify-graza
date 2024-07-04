@@ -3,8 +3,9 @@
 
 <div class="container">
     <div class="left-container">
-           {% assign image_url ='img1.jpeg' | asset_url | image_url: width: '500' %}
-           {{ image_url | image_tag: style: 'height:100vh; object-fit: cover;' }}
+           <img src="{{ 'img1.jpeg' | asset_url }}" width="500" height="500" />
+
+           
     </div>
     <div class="right-container">
       <div class="product">

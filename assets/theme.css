@@ -414,9 +414,10 @@
         width: 100%;
     }
     .product-title{
-    font-size: 25px;
-    font-weight: 100;
-    color: rgb(48, 48, 3);
+        margin-left:2px
+        font-size: 25px;
+        font-weight: 100;
+        color: rgb(48, 48, 3);
     }
     #logo-div{
         justify-content: center;
@@ -533,7 +534,7 @@
     }
     .Set{
         width: 95%;
-        height: 12vh;
+        height: 13vh;
     }
     .desc-content{
         width: 100%;
